@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3C3026" />
+      <stop offset="60%" stop-color="#231B15" />
+      <stop offset="100%" stop-color="#14110E" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="40%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#DC2626" />
+      <stop offset="35%" stop-color="#EA580C" />
+      <stop offset="70%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#FEF08A" />
+    </linearGradient>
+    <filter id="diyaGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Sacred Temple Night Background with Rounded Squircle -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGlow)" />
+  <rect width="504" height="504" x="4" y="4" rx="106" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Outer Mala Ring with Sacred Beads (27 primary beads representing 108 quarters) -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="2 12" stroke-opacity="0.35" />
+  <circle cx="256" cy="256" r="195" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-opacity="0.6" />
+
+  <!-- 108 Mala Accent Beads Ring -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <!-- Bead accents around circumference -->
+    <circle cx="256" cy="61" r="7" />
+    <circle cx="353" cy="87" r="5" />
+    <circle cx="425" cy="159" r="5" />
+    <circle cx="451" cy="256" r="7" />
+    <circle cx="425" cy="353" r="5" />
+    <circle cx="353" cy="425" r="5" />
+    <circle cx="256" cy="451" r="8" fill="#F59E0B" /> <!-- Guru Bead -->
+    <circle cx="159" cy="425" r="5" />
+    <circle cx="87" cy="353" r="5" />
+    <circle cx="61" cy="256" r="7" />
+    <circle cx="87" cy="159" r="5" />
+    <circle cx="159" cy="87" r="5" />
+  </g>
+
+  <!-- Sacred Lotus Mandala Base -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="2.5" opacity="0.75">
+    <path d="M 256 120 C 230 180, 230 200, 256 240 C 282 200, 282 180, 256 120 Z" />
+    <path d="M 256 392 C 230 332, 230 312, 256 272 C 282 312, 282 332, 256 392 Z" />
+    <path d="M 120 256 C 180 230, 200 230, 240 256 C 200 282, 180 282, 120 256 Z" />
+    <path d="M 392 256 C 332 230, 312 230, 272 256 C 312 282, 332 282, 392 256 Z" />
+    <!-- Diagonal Petals -->
+    <path d="M 160 160 C 200 190, 215 205, 245 245 C 205 215, 190 200, 160 160 Z" />
+    <path d="M 352 160 C 312 190, 297 205, 267 245 C 307 215, 322 200, 352 160 Z" />
+    <path d="M 160 352 C 200 322, 215 307, 245 267 C 205 297, 190 312, 160 352 Z" />
+    <path d="M 352 352 C 312 322, 297 307, 267 267 C 307 297, 322 312, 352 352 Z" />
+  </g>
+
+  <!-- Brass Diya Bowl -->
+  <g filter="url(#diyaGlow)">
+    <path d="M 176 310 C 176 350, 336 350, 336 310 C 336 295, 176 295, 176 310 Z" fill="url(#goldGrad)" />
+    <!-- Diya Stem/Stand -->
+    <path d="M 230 345 L 282 345 L 292 370 L 220 370 Z" fill="url(#goldGrad)" opacity="0.9" />
+    <!-- Sacred Flame -->
+    <path d="M 256 185 C 240 230, 224 265, 240 295 C 248 300, 264 300, 272 295 C 288 265, 272 230, 256 185 Z" fill="url(#flameGrad)" />
+    <!-- Inner Flame Core -->
+    <path d="M 256 220 C 248 245, 244 265, 252 285 C 255 288, 261 288, 264 285 C 272 265, 264 245, 256 220 Z" fill="#FFFBEB" />
+  </g>
+
+  <!-- Sacred Devanagari 'ॐ' Glow in Upper Center -->
+  <text x="256" y="165" font-family="'Noto Sans Devanagari', 'Rozha One', serif" font-size="52" font-weight="bold" fill="url(#goldGrad)" text-anchor="middle" opacity="0.95">ॐ</text>
+</svg>

@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #FAF6EF;
+    --card-cream: #F0E7D8;
+    --saffron: #C88735;
+    --saffron-light: #E09E4F;
+    --gold: #B89A60;
+    --gold-light: #D4B982;
+    --gold-dark: #917540;
+    --dark-brown: #3C3026;
+    --dark-bg: #171511;
+    --dark-card: #231F1A;
+    --dark-card-lighter: #2E2922;
+  }
+
+  body {
+    font-family: 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .font-devanagari {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+  }
+
+  .font-marcellus {
+    font-family: 'Marcellus', 'Cinzel', serif;
+  }
+
+  .font-rozha {
+    font-family: 'Rozha One', 'Noto Sans Devanagari', serif;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom Spiritual Glow Animations & Scrollbars */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 8px rgba(234, 88, 12, 0.7));
+  }
+  50% {
+    transform: scale(1.06) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.85));
+  }
+}
+
+.animate-flame {
+  animation: flameFlicker 2.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes pulseHalo {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(200, 135, 53, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 35px 10px rgba(200, 135, 53, 0.4);
+  }
+}
+
+.animate-pulse-halo {
+  animation: pulseHalo 3s ease-in-out infinite;
+}
+
+/* Subtle Rudraksha Texture & Gold Borders */
+.gold-border {
+  border: 1px solid rgba(184, 154, 96, 0.35);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #B89A60 0%, #E09E4F 40%, #B89A60 80%, #917540 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.saffron-gradient {
+  background: linear-gradient(135deg, #C88735 0%, #D97706 50%, #B45309 100%);
+}
+
+.brass-gradient {
+  background: linear-gradient(145deg, #FAF6EF 0%, #F0E7D8 50%, #E2D3BE 100%);
+}
+
+.dark-brass-gradient {
+  background: linear-gradient(145deg, #26211B 0%, #1D1814 60%, #15120F 100%);
+}
+
+/* Prevent text drag and double click zoom on buttons */
+button {
+  user-select: none;
+  -webkit-user-select: none;
+}

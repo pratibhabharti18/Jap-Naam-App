@@ -1,0 +1,6 @@
+{
+  "name": "JapSankhya - Spiritual Naam Jap Counter",
+  "description": "A premium Indian spiritual naam jap counter to count mantras, complete malas, track daily goals, and maintain your spiritual streak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
